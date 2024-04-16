@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Meu site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
+</head>
+<body>
+    <header>
+        <h1 id="logo">Blog <span>|</span> <span class="lit-color">Literário</span></h1>
+        <button class="btn-mobile" onclick="showMenu()">
+            <img id="img-btn" src="./image/cardapio.png" alt="">
+        </button>
+    </header>
+    <nav id="nav-pc">
+        <a href="#">Home</a>
+        <a href="#">Nossos Blogs</a>
+        <a href="#">Contato</a>
+       
+        
+            <div class="search">
+                <input id="input" type="text" name="pesquisa" placeholder="Faça uma pesquisa">
+                <button class="btn-search"><img src="./image/lupa.png" alt=""></button>
+            </div>
+       
+        <a href="#" id="produtos">Novidades</a>
+       
+    </nav>
+    <nav id="nav-mobile">
+        <a href="#">Home</a>
+        <a href="#">Nossos Blogs</a>
+        <a href="#">Contato</a>
+        <div class="search">
+            <input id="input-mobile" type="text" name="pesquisa" placeholder="Faça uma pesquisa">
+            <button class="btn-search"><img src="./image/lupa.png" alt=""></button>
+        </div>
+        <a href="#" id="produtos">Novidades</a>
+    </nav>
+    <main>
+        <section class="principal">
+            <div class="container-slider">
+                <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+                    centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                    <swiper-slide><img src="./image/slide1.png" alt=""></swiper-slide>
+                    <swiper-slide><img src="./image/slide2.png" alt=""></swiper-slide>
+                    <swiper-slide><img src="./image/slide3.png" alt=""></swiper-slide>
+                    <swiper-slide><img src="./image/slide4.png" alt=""></swiper-slide>
+                </swiper-container>
+            </div>
+        </section>
+
+        <section class="secondary">
+            <h2>Quem Somos?</h2>
+            <p>Somos um Blog voltado a falar dos mais diversos trabalhos literários.
+            Nosso intuito é te deixar por dentro das principais novidades no mundo da escrita seja livros, cadernetas, revistas, monografias, entre outros! 
+            </p>
+           <button>Saiba Mais  <img class="icon" src="./image/questao.png" alt=""></button>
+        </section>
+        <section class="tertiary">
+            <div class="content-tertiary">
+                <h2>Destaques Literários</h2>
+                <section class="destaques">
+                    <section class="destaque">
+                        <img src="./image/livro1.png" alt="">
+                    </section>
+                    <section class="destaque">
+                        <img src="./image/livro2.png" alt="">
+                    </section>
+                    <section class="destaque">
+                        <img src="./image/livro3.png" alt="">
+                    </section>
+                    <section class="destaque">
+                        <img src="./image/livro4.png" alt="">
+                    </section>
+                </section>
+            </div>
+        </section>
+        <section class="quartiary">
+            <h2>"Sempre imaginei que o paraíso fosse uma espécie de livraria."</h2>
+            <legend>- Jorge Luis Borges</legend>
+        </section>
+
+    </main>
+    <footer id="footer">
+        <h3>Entre em contato:</h3>
+        <p>blogliterario@gmail.com | blogliterario@hotmail.com</p>
+        <span>Fone: (00)00000 - 0000</span>
+    </footer >
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+          
+            pagination: {
+              el: '.swiper-pagination',
+            },
+          
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          
+          });
+          
+    </script>
+    <script src="./js/script.js" defer></script>  
+</body>
+</html>
