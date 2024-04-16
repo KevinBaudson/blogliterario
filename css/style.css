@@ -305,7 +305,7 @@ swiper-container {
   }
   @media screen and (max-width:570px){
     html, body{
-        overflow: hidden;
+        overflow: auto;
     }
     .content-tertiary .destaques{
         grid-template-columns: 1fr 1fr;
@@ -319,7 +319,9 @@ swiper-container {
   }
 
   @media screen and (max-width:500px){
-    
+    main .principal{
+        width: 100vw;
+    }
     .content-tertiary .destaques{
         grid-template-columns: 1fr ;
     }
@@ -330,6 +332,12 @@ swiper-container {
         width: 200px;
     }
    
+  }
+
+  @media screen and (max-height:820px){
+    .content-tertiary .destaques{
+        grid-template-columns: 1fr 1fr ;
+    }
   }
 
 

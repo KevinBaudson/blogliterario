@@ -8,7 +8,7 @@
       imgbtn.src = './image/menus.png'
       navMobile.style.display = 'flex'
     }else{
-      body.style.overflow = 'scroll'
+      body.style.overflow = 'auto'
       imgbtn.src = './image/cardapio.png'
       navMobile.style.display = 'none'    
     }
