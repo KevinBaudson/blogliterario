@@ -315,16 +315,16 @@ swiper-container {
     main .principal{
         width: 100vw;
     }
-    .destaque{
-        width: 200px;
-    }
-   
   }
-
-  @media screen and (max-height:820px){
-    .content-tertiary .destaques{
+  @media screen and (max-width:420px){
+    main .principal{
+        width: 100vw;
+    }
+    .destaque{
         grid-template-columns: 1fr 1fr ;
     }
   }
+
+
 
 
