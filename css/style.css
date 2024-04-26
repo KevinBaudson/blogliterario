@@ -316,7 +316,14 @@ swiper-container {
         width: 100vw;
     }
     .destaque{
-        grid-template-columns: 1fr 1fr;
+        width: 200px;
+    }
+   
+  }
+
+  @media screen and (max-height:820px){
+    .content-tertiary .destaques{
+        grid-template-columns: 1fr 1fr ;
     }
   }
 
