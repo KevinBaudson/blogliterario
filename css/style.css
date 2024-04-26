@@ -182,7 +182,6 @@ main .principal{
 .tertiary{
     margin:40px auto ;
     width: 100%;
-    height: 80vh;
     display: flex;
     column-count: 2;
     align-items: center;
@@ -226,6 +225,7 @@ button:hover{
     text-align: center;
     padding: 20px;
     width: 100%;
+    height: auto;
 }
 .quartiary h2{
     font-style: italic;
@@ -238,23 +238,18 @@ button:hover{
 }
 /* seção de destaques */
 .destaques{
-    margin-top: 20px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    justify-items: center;
-
-}
-.destaques:not(last-child){
-    gap: 20px;
+   
 }
 
 .destaque{
-    display: flex;
-    flex-direction: column;
-    max-width: 150px;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    gap: 20px;
 }
 
 
@@ -296,12 +291,10 @@ swiper-container {
 
   }
 
-  @media screen and (max-width:750px){
-    
-    .content-tertiary .destaques{
-        grid-template-columns: 1fr 1fr 1fr;
+  @media screen and (max-width:650px) {
+    .destaque{
+        grid-template-columns: 1fr 1fr 1fr ;
     }
-    
   }
   @media screen and (max-width:570px){
     html, body{
@@ -322,21 +315,8 @@ swiper-container {
     main .principal{
         width: 100vw;
     }
-    .content-tertiary .destaques{
-        grid-template-columns: 1fr ;
-    }
-    .destaques{
-        height: 100vh;
-    }
     .destaque{
-        width: 200px;
-    }
-   
-  }
-
-  @media screen and (max-height:820px){
-    .content-tertiary .destaques{
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
     }
   }
 
