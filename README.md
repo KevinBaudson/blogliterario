@@ -1,4 +1,4 @@
-## 📚 Blog Literário
+# 📚 Blog Literário
 
 Bem-vindo ao **Blog Literário**, um projeto pessoal criado para compartilhar livros de forma interativa e visual.  
 A aplicação consome a API do Google Books para buscar informações sobre obras e exibe os livros com um layout moderno, incluindo **slides responsivos com Swiper.js**.
@@ -43,3 +43,37 @@ A aplicação consome a API do Google Books para buscar informações sobre obra
 
 ```bash
 git clone https://github.com/KevinBaudson/blogliterario.git
+```
+
+###2. Abra no navegador
+Você pode simplesmente abrir o arquivo index.html ou usar uma extensão de servidor local, como:
+```
+cd blogliterario
+```
+
+- Live Server (VS Code)
+
+- http-server (Node.js)
+
+🔧 Estrutura do Projeto
+```
+
+blogliterario/
+│
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│   └── imagens, ícones, gifs...
+└── README.md
+```
+
+📌 Observações
+O projeto usa a Google Books API, que pode ter limites de requisição sem autenticação.
+
+Recomendado utilizar navegadores modernos para melhor suporte ao Swiper.js.
+
+## 📫 Contato
+
+- **LinkedIn**: [Kevin Baudson](https://www.linkedin.com/in/kevinbaudson)
+- **Email**: kevinbaudson@gmail.com
